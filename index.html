@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karan kumar</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- copied -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+  <!-- copied -->
+  <!-- <link rel="icon" href="favicon.ico?v=2"> -->
+</head>
+
+<body>
+  <section class="menu">
+    <div class="hamburger">
+      <img src="images/hamburger.png" alt="ham">
+    </div>
+  </section>
+  <section class="nav-content">
+    <div class="close-btn">
+      <img src="images/close.png" alt="">
+    </div>
+    <div class="wrap-nav">
+      <h2 class="section-heading" data-outline="Menu">Menu</h2>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <div class="cont" id="home">
+    <div class="top-cont">
+      <img class="topcloud" src="images/cloud.png" alt="cloud">
+      <div class="heading">
+        <h1>I'm karan.</h1>
+        <div class="codeEditing">
+          <h2><span class="auto-type"></span></h2>
+        </div>
+      </div>
+      <img class="bottomcloud" src="images/cloud.png" alt="cloud">
+      <img class="mountain" src="images/mountain.png" alt="mountain">
+    </div>
+  </div>
+
+  <div class="middle-container">
+    <div class="profile" id="about">
+      <img class="profile-pic" src="images/mypic-bg-removed.png" alt="profile">
+      <h2 class="hello">Hello.</h2>
+      <p> I'm a full stack developer and also know machine learning through python.love to learn new code day to day💖.
+      </p>
+    </div>
+    <hr class="hr-profile">
+    <div class="skills" id="skill">
+      <h2 class="hello">My Skills.</h2>
+      <div class="copied">
+        <div class="wrapper">
+          <div class="card">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span></span></div>
+            </div>
+            <div class="text">HTML & CSS</div>
+          </div>
+          <div class="card js">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span></span></div>
+            </div>
+            <div class="text">JavaScript</div>
+          </div>
+
+          <div class="card node">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span></span></div>
+            </div>
+            <div class="text">NodeJs & Express</div>
+          </div>
+
+          <div class="card react">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span></span></div>
+            </div>
+            <div class="text">MongoDb</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <hr>
+    <section class="project" id="project">
+      <div class="project-container">
+        <h2 class="project-heading">Projects</h2>
+        <div class="all-items">
+          <div class="item">
+            <div class="left">
+              <div class="item-img">
+                <img src="images/gamepic.jpg" alt="">
+              </div>
+            </div>
+            <div class="right">
+              <h2 class="project-title">stone paper scissor</h2>
+              <h3 class="project-sub-title">Lorem, ipsum dolor.</h3>
+              <p class="project-desc">Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti, labore? sit amet consectetur adipisicing elit. Nam, esse?</p>
+              <div class="buttons-project">
+                <a href='#' class="P-btn1">know more</a>
+                <a href='#' class="P-btn1">visit</a>
+              </div>
+            </div>
+          </div>
+          <!-- item2 -->
+          <div class="item">
+            <div class="left">
+              <div class="item-img">
+                <img src="images/gamepic.jpg" alt="">
+              </div>
+            </div>
+            <div class="right">
+              <h2 class="project-title">stone paper scissor</h2>
+              <h3 class="project-sub-title">Game</h3>
+              <p class="project-desc">This game is built using javaScript Html & Css also included Backend Login Form
+                using ExpressJs and Mailchimp Api.</p>
+              <div class="buttons-project">
+                <a href='#' class="P-btn1">Visit game</a>
+                <a href='#' class="P-btn1">click</a>
+              </div>
+            </div>
+          </div>
+          <!-- item3 -->
+          <div class="item">
+            <div class="left">
+              <div class="item-img">
+                <img src="images/gamepic.jpg" alt="">
+              </div>
+            </div>
+            <div class="right">
+              <h2 class="project-title">stone paper scissor</h2>
+              <h3 class="project-sub-title">Lorem, ipsum dolor.</h3>
+              <p class="project-desc">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Nam, esse?</p>
+              <div class="buttons-project">
+                <a href='#' class="P-btn1">know more</a>
+                <a href='#' class="P-btn1">visit</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <hr>
+  <section class="contact-detail" id="contact">
+    <h2>Contact me</h2>
+    <section id="c3">
+      <div class="contact-me">
+        <h1>Contact Form</h1>
+        <form class="cf">
+          <div class="half left cf">
+            <input type="text" id="input-name" placeholder="Name">
+            <input type="email" id="input-email" placeholder="Email address">
+            <input type="text" id="input-subject" placeholder="Subject">
+          </div>
+          <div class="half right cf">
+            <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+          </div>
+          <input type="submit" value="Submit" id="input-submit">
+        </form>
+      </div>
+      <hr>
+    </section>
+    <div class="contact-container">
+      <h2>Get In Touch</h2>
+      <h3>Hire me</h3>
+    </div>
+    <div class="resume-cls">
+      <a href="images/karan kumar-Resume.pdf" class="" download>Download Resume</a>
+    </div>
+    <div class="bottom-container">
+      <a class="footer-link" href="mailto:karankumard20ca039@gmail.com"><img src="images/icons8-email-100.png"
+          alt="Email"></a>
+      <a class="footer-link" href="https://www.linkedin.com/in/karan-kumar-a62a22263"><img
+          src="images/icons8-linkedin-100.png" alt="LinkedIn"></a>
+      <a class="footer-link" href="https://github.com/karanDev10"><img src="images/icons8-github-100.png"
+          alt="github"></a>
+    </div>
+  </section>
+  <footer>
+    <p>©2023 karan kumar-All Rights Reserved</p>
+  </footer>
+  <!-- script for editing heading section -->
+  <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+  <!-- main script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
