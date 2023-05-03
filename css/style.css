@@ -17,6 +17,8 @@ html {
 }
 
 body {
+    width: 100%;
+    height: auto;
     margin: 0;
     text-align: center;
     scroll-behavior: smooth;
@@ -171,9 +173,9 @@ body {
 .topcloud {
     position: absolute;
     color: white;
-    top: 3.2rem;
-    right: 9.2rem;
-    width: 20.4rem;
+    top: 0;
+    right: 4vw;
+    width: 17vw;
 
 
 }
@@ -405,6 +407,11 @@ hr {
 .item-img img:hover {
     /* box-shadow: 0px 8px 15px rgba(228, 221, 221, 0.719); */
     transform: translateY(-100px);
+}
+
+.section-heading {
+    left: 47px;
+    top: 94px;
 }
 
 .project-container .item {
@@ -712,9 +719,9 @@ footer p {
     }
 
     .topcloud {
-        top: 4.2rem;
-        right: -1.8rem;
-        width: 19.4rem;
+        top: 0;
+        right: 1.2rem;
+        width: 15.4rem;
     }
 
     .bottomcloud {
@@ -735,7 +742,7 @@ footer p {
     }
 
     .heading .codeEditing h2 {
-        color: lightcoral;
+        color: #66bfbf;
         font-size: 2.7rem;
         font-weight: 500;
     }
@@ -800,39 +807,64 @@ footer p {
         position: sticky;
     }
 
+    .cont {
+        width: 100%;
+        height: 83vh;
+        position: relative;
+    }
+
     .mountain {
-        width: 450px;
-        height: 300px;
+        width: 395px;
+        height: 239px;
+        position: absolute;
+        bottom: 0;
+        right: 2vh;
     }
 
     .menu .hamburger img {
         width: 70%;
+        position: sticky;
+
+    }
+
+    .section-heading {
+        left: 58px;
+    }
+
+    .heading {
+        position: absolute;
+        right: 10vh;
+        top: 18vh;
     }
 
     .heading h1 {
-        font-size: 5rem;
-        margin: 14rem auto 2rem auto;
+        font-size: 7rem;
     }
 
     .topcloud {
-        top: 3.2rem;
-        right: 3.2rem;
-        width: 17rem;
+        top: 3vh;
+        right: 3vh;
+        width: 35vw;
     }
 
     .bottomcloud {
-        left: 5%;
-        top: 50%;
-        width: 96px;
+        left: 4vw;
+        top: 46vh;
+    }
+
+    .profile {
+        width: 60%;
+        text-align: center;
+        margin: 10rem auto 0rem auto;
     }
 
     .buttons-project .P-btn1 {
         width: 12rem;
-        height: 4rem;
     }
 }
 
-@media(max-width: 300px) {
+/* 423 */
+@media(max-width: 424px) {
     .wrapper {
         max-width: 500px;
     }
@@ -849,25 +881,41 @@ footer p {
     }
 
     /* media for all */
+
     html {
         font-size: 40%;
     }
 
+    .heading {
+        /* position: absolute; */
+        right: 3vh;
+        top: 16vh;
+    }
+
     .heading h1 {
-        font-size: 5rem;
-        margin: 18rem auto 2rem auto;
+        font-size: 6rem;
     }
 
     .mountain {
-        width: 351px;
-        height: 309px;
-        position: relative;
-        bottom: -44px;
-        left: -19px;
+        width: 281px;
+        height: 240px;
+        position: absolute;
+        bottom: -35px;
+        right: 1vh;
     }
 
-    .profile {
-        width: 72%;
+    .bottomcloud {
+        left: 4vw;
+        top: 43vh;
+        width: 43vw;
+    }
+
+    .section-heading {
+        left: 5vh;
+    }
+
+    .cont {
+        height: 75vh;
     }
 
     .wrapper .card {
@@ -876,16 +924,18 @@ footer p {
         box-shadow: 3px 6px 9px 4px rgba(0, 0, 0, 0.22);
     }
 
-    /* .item .right { */
-    /* margin-left: -90px; */
-    /* padding: 2rem 3rem; */
-    /* } */
+}
 
-    .item-img {
-        margin-left: 2rem;
+@media(max-width: 390px) {
+    .mountain {
+        width: 332px;
+        height: 248px;
+        bottom: -23px;
+        right: 5vh;
     }
 
-    .buttons-project .P-btn1 {
-        letter-spacing: 1px;
+    .heading {
+        right: 12vh;
+        top: 17vh;
     }
 }
