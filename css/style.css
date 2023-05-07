@@ -1,5 +1,6 @@
 /* copied for skill */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
@@ -14,6 +15,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    /* scroll-snap-type: y mandatory; */
 }
 
 body {
@@ -22,6 +24,7 @@ body {
     margin: 0;
     text-align: center;
     scroll-behavior: smooth;
+    /* scroll-snap-type: y mandatory; */
 }
 
 /* navigation */
@@ -90,12 +93,16 @@ body {
 }
 
 .section-heading {
-    font-size: 3rem;
+    font-size: 30px;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
     position: absolute;
-    left: 85px;
-    top: 75px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 7vh;
+    color: pink;
 }
 
 .wrap-nav nav ul {
@@ -141,6 +148,30 @@ body {
 }
 
 /* navigation */
+/* #home { */
+/* scroll-snap-align: start; */
+/* } */
+/*  */
+/* #about { */
+/* scroll-snap-align: start; */
+/* } */
+/*  */
+/* #skill { */
+/* scroll-snap-align: start; */
+/* } */
+/*  */
+/* #projectsid { */
+/* scroll-snap-align: start; */
+/* } */
+/*  */
+/* #contact { */
+/* scroll-snap-type-y: unset; */
+/* } */
+/*  */
+/* #touch { */
+/* scroll-snap-align: start; */
+/* } */
+
 .cont {
     background-color: #EAF6F6;
     text-align: center;
@@ -150,7 +181,9 @@ body {
 
 .heading h1 {
     color: #66BFBF;
-    font-family: 'Great Vibes', cursive;
+    font-weight: 900;
+    /* font-family: 'Pacifico', sans-serif; */
+    font-family: 'Merriweather', sans-serif;
     font-size: 8rem;
     margin: 10rem auto 1.5rem auto;
 
@@ -278,6 +311,10 @@ hr {
 }
 
 /* copied */
+#skills {
+    scroll-snap-align: start;
+}
+
 .copied {
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -374,13 +411,14 @@ hr {
 
 
 /* project design */
+
 .project-heading {
     font-size: 3rem;
     font-family: 'Merriweather', sans-serif;
     margin: 10rem auto;
 }
 
-#project {
+.project {
     margin: 10rem 0px;
 
 }
@@ -409,10 +447,6 @@ hr {
     transform: translateY(-100px);
 }
 
-.section-heading {
-    left: 47px;
-    top: 94px;
-}
 
 .project-container .item {
     display: flex;
@@ -439,15 +473,13 @@ hr {
 .right .project-desc {
     font-size: 1.4rem;
     font-family: 'Poppins', sans-serif;
-
 }
 
 /* designing buttons inside project */
+
 .buttons-project {
     display: flex;
     margin-top: 2rem;
-
-
 }
 
 .buttons-project .P-btn1 {
@@ -513,6 +545,7 @@ hr {
 
 
 /* contact  design */
+
 .contact-container h2 {
     font-size: 3rem;
     font-family: 'Merriweather', sans-serif;
@@ -803,14 +836,16 @@ footer p {
         font-size: 45%;
     }
 
-    .menu .hamburger img {
-        position: sticky;
-    }
-
     .cont {
         width: 100%;
-        height: 83vh;
+        height: 100vh;
         position: relative;
+    }
+
+    .topcloud {
+        top: 13vh;
+        right: 4vh;
+        width: 44vw;
     }
 
     .mountain {
@@ -827,29 +862,23 @@ footer p {
 
     }
 
-    .section-heading {
-        left: 58px;
-    }
 
     .heading {
-        position: absolute;
-        right: 10vh;
-        top: 18vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
     }
 
     .heading h1 {
         font-size: 7rem;
     }
 
-    .topcloud {
-        top: 3vh;
-        right: 3vh;
-        width: 35vw;
-    }
-
     .bottomcloud {
         left: 4vw;
-        top: 46vh;
+        top: 63vh;
+        width: 48vw;
     }
 
     .profile {
@@ -886,36 +915,34 @@ footer p {
         font-size: 40%;
     }
 
-    .heading {
-        /* position: absolute; */
-        right: 3vh;
-        top: 16vh;
-    }
 
     .heading h1 {
-        font-size: 6rem;
+        font-size: 11rem;
     }
 
     .mountain {
-        width: 281px;
-        height: 240px;
+        /* width: 95vw; */
+        height: 19vh;
         position: absolute;
-        bottom: -35px;
-        right: 1vh;
+        bottom: 0px;
+        right: 0vh;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
     }
 
     .bottomcloud {
-        left: 4vw;
-        top: 43vh;
-        width: 43vw;
+        left: 5vw;
+        top: 66vh;
+        width: 49vw;
     }
 
-    .section-heading {
-        left: 5vh;
-    }
-
-    .cont {
-        height: 75vh;
+    .heading .codeEditing h2 {
+        color: #66bfbf;
+        font-size: 3rem;
+        font-weight: 600;
+        margin-top: 5px;
     }
 
     .wrapper .card {
@@ -924,18 +951,26 @@ footer p {
         box-shadow: 3px 6px 9px 4px rgba(0, 0, 0, 0.22);
     }
 
-}
-
-@media(max-width: 390px) {
-    .mountain {
-        width: 332px;
-        height: 248px;
-        bottom: -23px;
-        right: 5vh;
+    .resume-cls a {
+        width: 22rem;
+        height: 5.5rem;
+        font-size: 1.5rem;
     }
 
-    .heading {
-        right: 12vh;
-        top: 17vh;
+    .section-heading {
+        font-size: 25px;
+    }
+
+}
+
+@media(max-width: 305px) {
+    .mountain {
+        height: 15vh;
+    }
+}
+
+@media(max-width: 280px) {
+    .mountain {
+        height: 12vh;
     }
 }
