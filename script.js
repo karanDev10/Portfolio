@@ -1,20 +1,23 @@
-let options = {
-    startAngle: -1.55,
-    size: 150,
-    value: 0.85,
-    fill: { gradient: ['#a445b2', '#fa4299'] }
-}
-$(".circle .bar").circleProgress(options).on('circle-animation-progress',
-    function (event, progress, stepValue) {
-        $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
-    });
-$(".js .bar").circleProgress({
-    value: 0.70
-});
-$(".react .bar").circleProgress({
-    value: 0.60
-});
+function cicleanimation() {
 
+    let options = {
+        startAngle: -1.55,
+        size: 150,
+        value: 0.85,
+        fill: { gradient: ['#a445b2', '#fa4299'] }
+    }
+    $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+        function (event, progress, stepValue) {
+            $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+        });
+    $(".js .bar").circleProgress({
+        value: 0.70
+    });
+    $(".react .bar").circleProgress({
+        value: 0.60
+    });
+
+}
 // menubar js hamburger
 const hamburger = document.querySelector('.hamburger')
 const hamOpen = document.querySelector('.nav-content');
@@ -46,3 +49,22 @@ let typed = new Typed('.auto-type', {
     backspeed: 150,
     loop: true
 });
+
+
+
+
+
+// Create a new Intersection Observer instance
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Do something when the element becomes visible
+            cicleanimation()
+        }
+    });
+});
+
+const skills = document.getElementById('bar1');
+
+// Start observing the target element
+observer.observe(skills);
