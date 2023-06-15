@@ -389,8 +389,7 @@ hr {
 .card .circle .box span,
 .wrapper .card .text {
     background: -webkit-linear-gradient(left, #a445b2, #fa4299);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #fff;
 }
 
 .circle .box span {
